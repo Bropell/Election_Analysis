@@ -22,7 +22,7 @@ total_votes = 0
 
 
 
-# Candidate Options and candidate votes
+# Candidate Options and candidate votes.
 
 candidate_options = []
 
@@ -31,7 +31,7 @@ candidate_votes = {}
 
 
 
-# Winning Candidate and Winning Count Tracker
+# Winning Candidate and Winning Count Tracker.
 
 winning_candidate = ""
 
@@ -99,13 +99,13 @@ for candidate_name in candidate_votes:
     vote_percentage = float(votes) / float(total_votes) * 100
 
     
-    # To do: print out each candidate's name, vote count, and percentage of votes to the terminal
+    # Print out each candidate's name, vote count, and percentage of votes to the terminal
     
     print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
 
-    # Determine winning vote count and candidate\
+    # Determine winning vote count and candidate.
 
-    # Dtermine if the votes is greater than the winning count. 
+    # Determine if the votes is greater than the winning count. 
 
     if (votes > winning_count) and (vote_percentage > winning_percentage):
 
